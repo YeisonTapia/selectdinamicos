@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" >
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/customstyle.css">
+    <title>Select And Search JQuery</title>
+  </head>
+  <body>
+<!-- Start Users -->
+    <div class="container">
+      <div class="row">
+        <div class="form-group col-md-12" style="margin-top: 2rem">
+          <input type="text" name="search" id="searchtxt" placeholder="Buscar en Seleccionables ..." class="form-control">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card" style="width: 100%">
+            <div class="card-header">
+              Seleccionables 
+              <span>0</span>
+            </div>
+            <div class="card-body">
+              <ul class="list-group" id="seleccionables">
+                <li class="list-group-item" data-id="1">Alma Ontiveros
+                  <br>
+                  <span> proyetos.mexco@hipertexto.com</span>
+                </li>
+                <li class="list-group-item" data-id="2">Armando Rodiguez
+                  <br>
+                  <span> comunicaciones@hipertexto.com</span>
+                </li>
+                <li class="list-group-item" data-id="3">Carlos Velazquez
+                  <br>
+                  <span> gerencia.digital@hipertexto.com</span>
+                </li>
+                <li class="list-group-item" data-id="4">Julian Alvis
+                  <br>
+                  <span> libreriadelau@hipertexto.com</span>
+                </li>
+                <li class="list-group-item" data-id="5">Jaime Ivan Hurtado
+                  <br>
+                  <span> info@hipertexto.com</span>
+                </li>
+                <li class="list-group-item" data-id="6">Natalia Sanchez
+                  <br>
+                  <span> n@hipertexto.com</span>
+                </li>
+                <li class="list-group-item" data-id="7">Arturo Guarin
+                  <br>
+                  <span> desarrollo@hipertexto.com</span>
+                </li>
+                <li class="list-group-item" data-id="8">Yeison Tapia
+                  <br>
+                  <span> desarrollo3@hipertexto.com</span>
+                </li>
+                <li class="list-group-item" data-id="9">Blewn Vargas
+                  <br>
+                  <span> desarrollo5@hipertexto.com</span>
+                </li>
+                <li class="list-group-item" data-id="0">Hernan Soto
+                  <br>
+                  <span> soporte@hipertexto.com</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 100%">
+            <div class="card-header">
+              Seleccionados
+              <span>0</span>
+            </div>
+              <div class="card-body">
+                <ul class="list-group" id="seleccionados">
+                  <li class="list-group-item" data-id="1">
+                      <i class="material-icons">check</i>
+                      Alma Ontiveros
+                      <br>
+                      <span> proyextos.mexico@hipertexto.com.co</span>
+                  </li>
+                  <li class="list-group-item" data-id="2">
+                      <i class="material-icons">check</i>
+                      Armando Rodiguez
+                      <br>
+                      <span> comunicaciones@hipertexto.com.co</span>
+                  </li>
+                  <li class="list-group-item" data-id="3">
+                      <i class="material-icons">check</i>
+                      Carlos Velazquez
+                      <br>
+                      <span> gerencia.digital@hipertexto.com.co</span>
+                  </li>
+                  <li class="list-group-item" data-id="4">
+                      <i class="material-icons">check</i>
+                      Julian Alvis
+                      <br>
+                      <span> libreriadelau@hipertexto.com.co</span>
+                  </li>
+                  <li class="list-group-item" data-id="5">
+                      <i class="material-icons">check</i>
+                      Jaime Ivan Hurtado
+                      <br>
+                      <span> info@hipertexto.com.co</span>
+                  </li>
+                  <li class="list-group-item" data-id="6">
+                      <i class="material-icons">check</i>
+                      Natalia Sanchez
+                      <br>
+                      <span> n@hipertexto.com.co</span>
+                  </li>
+                  <li class="list-group-item" data-id="7">
+                      <i class="material-icons">check</i>
+                      Arturo Guarin
+                      <br>
+                      <span> desarrollo@hipertexto.com.co</span>
+                  </li>
+                  <li class="list-group-item" data-id="8">
+                      <i class="material-icons">check</i>
+                      Yeison Tapia
+                      <br>
+                      <span> desarrollo3@hipertexto.com.co</span>
+                  </li>
+                  <li class="list-group-item" data-id="9">
+                      <i class="material-icons">check</i>
+                      Blewn Vargas
+                      <br>
+                      <span> desarrollo5@hipertexto.com.co</span>
+                  </li>
+                  <li class="list-group-item" data-id="0">
+                      <i class="material-icons">check</i>
+                      Hernan Soto
+                      <br>
+                      <span> soporte@hipertexto.com.co</span>
+                  </li>
+                </ul>
+            </div>  
+          </div>
+        </div>
+      </div>
+
+<!-- End Users -->
+<!-- Start asign publisher-->
+      <div class="row">
+        <div class="form-group col-md-12" style="margin-top: 2rem">
+          <input type="text" name="search" id="searchtxt" placeholder="Buscar en Seleccionables ..." class="form-control">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card" style="width: 100%">
+            <div class="card-header">
+              Seleccionables
+            </div>
+            <div class="card-body">
+              <ul class="list-group" id="publishers-seleccionables">
+                <li class="list-group-item" data-id="1">Editorial 1</li>
+                <li class="list-group-item" data-id="2">Editorial 2</li>
+                <li class="list-group-item" data-id="3">Editorial 3</li>
+                <li class="list-group-item" data-id="4">Editorial 4</li>
+                <li class="list-group-item" data-id="5">Editorial 5</li>
+                <li class="list-group-item" data-id="6">Editorial 6</li>
+                <li class="list-group-item" data-id="7">Editorial 7</li>
+                <li class="list-group-item" data-id="8">Editorial 8</li>
+                <li class="list-group-item" data-id="9">Editorial 9</li>
+                <li class="list-group-item" data-id="0">Editorial 0</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 100%">
+            <div class="card-header">
+              Seleccionados
+            </div>
+              <div class="card-body">
+                <ul class="list-group" id="publishers-seleccionados">
+                  
+                </ul>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- End asign publisher-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/customscript.js"></script>
+  </body>
+</html>

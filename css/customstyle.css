@@ -1,0 +1,23 @@
+.hideselected, .hidesarch  {
+	display: none;
+}
+
+.showselected, .showsearch{
+	display: block;
+}
+
+.material-icons{
+	color: rgba(23,196,187,0.95);
+	border: 1px solid;
+	font-size: .8rem;
+	margin-right: 1rem;
+}
+.material-icons:hover{
+	background: rgba(23,196,187,0.95);
+	color: white;
+}
+
+
+li{
+	cursor: pointer;
+}
